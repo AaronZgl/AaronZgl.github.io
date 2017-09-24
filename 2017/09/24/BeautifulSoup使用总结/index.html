@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="BeautifulSoup python 爬虫," />
 
 
 
@@ -69,14 +69,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://AaronZgl.github.io/categories/index.html">
+<meta name="description" content="Beautiful Soup 4.2.0 文档 1.功能网页解析器：从网页中提取有价值的数据 2.原理结构化解析：将HTML网页解析成DOM树（Document Object Model），以节点为单位进行查找。 3.安装 pip install beautifulsoup4  4.方法 find_all：寻找所有符合要求的元素 find：寻找第一个符合要求的元素  5.使用 1.创建Beauti">
+<meta name="keywords" content="BeautifulSoup python 爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BeautifulSoup使用总结">
+<meta property="og:url" content="https://AaronZgl.github.io/2017/09/24/BeautifulSoup使用总结/index.html">
 <meta property="og:site_name" content="Aaron">
+<meta property="og:description" content="Beautiful Soup 4.2.0 文档 1.功能网页解析器：从网页中提取有价值的数据 2.原理结构化解析：将HTML网页解析成DOM树（Document Object Model），以节点为单位进行查找。 3.安装 pip install beautifulsoup4  4.方法 find_all：寻找所有符合要求的元素 find：寻找第一个符合要求的元素  5.使用 1.创建Beauti">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-23T04:54:13.000Z">
+<meta property="og:updated_time" content="2017-09-24T13:56:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="BeautifulSoup使用总结">
+<meta name="twitter:description" content="Beautiful Soup 4.2.0 文档 1.功能网页解析器：从网页中提取有价值的数据 2.原理结构化解析：将HTML网页解析成DOM树（Document Object Model），以节点为单位进行查找。 3.安装 pip install beautifulsoup4  4.方法 find_all：寻找所有符合要求的元素 find：寻找第一个符合要求的元素  5.使用 1.创建Beauti">
 
 
 
@@ -106,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="https://AaronZgl.github.io/categories/"/>
+  <link rel="canonical" href="https://AaronZgl.github.io/2017/09/24/BeautifulSoup使用总结/"/>
 
 
 
 
 
-  <title>分类 | Aaron</title>
+  <title>BeautifulSoup使用总结 | Aaron</title>
   
 
 
@@ -261,40 +265,281 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://AaronZgl.github.io/2017/09/24/BeautifulSoup使用总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Aaron Zhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aaron">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/爬虫/">爬虫</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">BeautifulSoup使用总结</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T21:56:05+08:00">
+                2017-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html" target="_blank" rel="external">Beautiful Soup 4.2.0 文档</a></p>
+<h1 id="1-功能"><a href="#1-功能" class="headerlink" title="1.功能"></a>1.功能</h1><p>网页解析器：从网页中提取有价值的数据</p>
+<h1 id="2-原理"><a href="#2-原理" class="headerlink" title="2.原理"></a>2.原理</h1><p>结构化解析：将HTML网页解析成DOM树（Document Object Model），以节点为单位进行查找。</p>
+<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><ul>
+<li>pip install beautifulsoup4</li>
+</ul>
+<h1 id="4-方法"><a href="#4-方法" class="headerlink" title="4.方法"></a>4.方法</h1><ul>
+<li>find_all：寻找所有符合要求的元素</li>
+<li>find：寻找第一个符合要求的元素</li>
+</ul>
+<h1 id="5-使用"><a href="#5-使用" class="headerlink" title="5.使用"></a>5.使用</h1><p> <code>1.创建BeautifulSoup对象</code> </p>
+<pre><code># 导入BeautifulSoup包
+from bs4 import BeautifulSoup
+
+# 创建BeautifulSoup对象
+soup = BeautifulSoup(html, &apos;html.parser&apos; from_encoding = &apos;utf-8&apos;)
+</code></pre><p><code>2.搜索节点（find_all, find）</code></p>
+<pre><code># 寻找div节点
+node = soup.find_all(&apos;div&apos;)
+
+# 寻找所有class属性为a的div节点
+node = soup.find_all(&apos;div&apos;, class=&apos;a&apos;)  
+
+# 寻找所有内容为p，class属性为a的div节点
+node = soup.find_all(&apos;div&apos;, class=&apos;a&apos;, string=&apos;p&apos;)
+</code></pre><p> <code>3.访问节点信息</code></p>
+<pre><code># 获得节点的标签名称
+name = node.name
+
+# 获得节点的href属性
+href = node[&apos;href&apos;]
+
+# 获得节点的文本内容
+text = node.get_text()
+</code></pre><h1 id="6-实例"><a href="#6-实例" class="headerlink" title="6.实例"></a>6.实例</h1><p> <code>代码</code></p>
+<pre><code># -*- coding: utf-8 -*-
+
+# 导入包
+from bs4 import BeautifulSoup
+
+# html文档，来自官网文档
+html_doc = &quot;&quot;&quot;
+&lt;html&gt;&lt;head&gt;&lt;title&gt;The Dormouse&apos;s story&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;p class=&quot;title&quot;&gt;&lt;b&gt;The Dormouse&apos;s story&lt;/b&gt;&lt;/p&gt;
+&lt;p class=&quot;story&quot;&gt;Once upon a time there were three little sisters; and their names were
+&lt;a href=&quot;http://example.com/elsie&quot; class=&quot;sister&quot; id=&quot;link1&quot;&gt;Elsie&lt;/a&gt;,
+&lt;a href=&quot;http://example.com/lacie&quot; class=&quot;sister&quot; id=&quot;link2&quot;&gt;Lacie&lt;/a&gt; and
+&lt;a href=&quot;http://example.com/tillie&quot; class=&quot;sister&quot; id=&quot;link3&quot;&gt;Tillie&lt;/a&gt;;
+and they lived at the bottom of a well.&lt;/p&gt;
+&lt;p class=&quot;story&quot;&gt;...&lt;/p&gt;
+&quot;&quot;&quot;
+
+# 创建soup对象
+soup = BeautifulSoup(html_doc, &apos;html.parser&apos; from_encoding = &apos;utf-8&apos;)
+
+# 寻找所有a节点
+a1_nodes = soup.find_all(&apos;a&apos;)
+
+# 寻找id为‘link1’的a节点
+a2_nodes = soup.find_all(&apos;a&apos;, id=&apos;link1&apos;)
+
+# 寻找class为story，内容为‘...’的节点
+# class为python的保留字，所以这里下一个下斜杠使用class_
+p_nodes = soup.find_all(&apos;p&apos;, class_=&apos;story&apos;, string=&apos;...&apos;)
+
+# 打印信息
+for node in a1_nodes:
+    print node[&apos;id&apos;]
+for node in a2_nodes:
+    print node[&apos;href&apos;]
+for node in p_nodes:
+    print node.get_text()
+</code></pre>
       
     </div>
     
     
     
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat_sub.jpg" alt="Aaron Zhou wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎扫描上方二维码，关注我的微信公众号！</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.png" alt="Aaron Zhou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Aaron Zhou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/BeautifulSoup-python-爬虫/" rel="tag"># BeautifulSoup python 爬虫</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
   </div>
 
 
@@ -329,8 +574,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -403,6 +657,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-功能"><span class="nav-number">1.</span> <span class="nav-text">1.功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-原理"><span class="nav-number">2.</span> <span class="nav-text">2.原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-安装"><span class="nav-number">3.</span> <span class="nav-text">3.安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-方法"><span class="nav-number">4.</span> <span class="nav-text">4.方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-使用"><span class="nav-number">5.</span> <span class="nav-text">5.使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-实例"><span class="nav-number">6.</span> <span class="nav-text">6.实例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
