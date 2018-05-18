@@ -1,1227 +1,564 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Aaron">
-<meta property="og:url" content="https://AaronZgl.github.io/index.html">
-<meta property="og:site_name" content="Aaron">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Aaron">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="https://AaronZgl.github.io/"/>
-
-
-
-
-
-  <title>Aaron</title>
-  
-
-
-
-
-
-
-
-
+	<title>星云钱包</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--animate-->
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!--//end-animate-->
 </head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Aaron</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle">Aaron的博客</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://AaronZgl.github.io/2017/09/24/BeautifulSoup使用总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Zhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aaron">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/24/BeautifulSoup使用总结/" itemprop="url">BeautifulSoup使用总结</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T22:03:04+08:00">
-                2017-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/爬虫/" itemprop="url" rel="index">
-                    <span itemprop="name">爬虫</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html" target="_blank" rel="external">Beautiful Soup 4.2.0 文档</a></p>
-<h1 id="1-功能"><a href="#1-功能" class="headerlink" title="1.功能"></a>1.功能</h1><p>网页解析器：从网页中提取有价值的数据</p>
-<h1 id="2-原理"><a href="#2-原理" class="headerlink" title="2.原理"></a>2.原理</h1><p>结构化解析：将HTML网页解析成DOM树（Document Object Model），以节点为单位进行查找。</p>
-<h1 id="3-安装"><a href="#3-安装" class="headerlink" title="3.安装"></a>3.安装</h1><ul>
-<li>pip install beautifulsoup4</li>
-</ul>
-<h1 id="4-方法"><a href="#4-方法" class="headerlink" title="4.方法"></a>4.方法</h1><ul>
-<li>find_all：寻找所有符合要求的元素</li>
-<li>find：寻找第一个符合要求的元素</li>
-</ul>
-<h1 id="5-使用"><a href="#5-使用" class="headerlink" title="5.使用"></a>5.使用</h1><p> <code>1.创建BeautifulSoup对象</code> </p>
-<pre><code># 导入BeautifulSoup包
-from bs4 import BeautifulSoup
-
-# 创建BeautifulSoup对象
-soup = BeautifulSoup(html, &apos;html.parser&apos; from_encoding = &apos;utf-8&apos;)
-</code></pre><p><code>2.搜索节点（find_all, find）</code></p>
-<pre><code># 寻找div节点
-node = soup.find_all(&apos;div&apos;)
-
-# 寻找所有class属性为a的div节点
-node = soup.find_all(&apos;div&apos;, class=&apos;a&apos;)  
-
-# 寻找所有内容为p，class属性为a的div节点
-node = soup.find_all(&apos;div&apos;, class=&apos;a&apos;, string=&apos;p&apos;)
-</code></pre><p> <code>3.访问节点信息</code></p>
-<pre><code># 获得节点的标签名称
-name = node.name
-
-# 获得节点的href属性
-href = node[&apos;href&apos;]
-
-# 获得节点的文本内容
-text = node.get_text()
-</code></pre><h1 id="6-实例"><a href="#6-实例" class="headerlink" title="6.实例"></a>6.实例</h1><p> <code>代码</code></p>
-<pre><code># -*- coding: utf-8 -*-
-
-# 导入包
-from bs4 import BeautifulSoup
-
-# html文档，来自官网文档
-html_doc = &quot;&quot;&quot;
-&lt;html&gt;&lt;head&gt;&lt;title&gt;The Dormouse&apos;s story&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;
-&lt;p class=&quot;title&quot;&gt;&lt;b&gt;The Dormouse&apos;s story&lt;/b&gt;&lt;/p&gt;
-&lt;p class=&quot;story&quot;&gt;Once upon a time there were three little sisters; and their names were
-&lt;a href=&quot;http://example.com/elsie&quot; class=&quot;sister&quot; id=&quot;link1&quot;&gt;Elsie&lt;/a&gt;,
-&lt;a href=&quot;http://example.com/lacie&quot; class=&quot;sister&quot; id=&quot;link2&quot;&gt;Lacie&lt;/a&gt; and
-&lt;a href=&quot;http://example.com/tillie&quot; class=&quot;sister&quot; id=&quot;link3&quot;&gt;Tillie&lt;/a&gt;;
-and they lived at the bottom of a well.&lt;/p&gt;
-&lt;p class=&quot;story&quot;&gt;...&lt;/p&gt;
-&quot;&quot;&quot;
-
-# 创建soup对象
-soup = BeautifulSoup(html_doc, &apos;html.parser&apos; from_encoding = &apos;utf-8&apos;)
-
-# 寻找所有a节点
-a1_nodes = soup.find_all(&apos;a&apos;)
-
-# 寻找id为‘link1’的a节点
-a2_nodes = soup.find_all(&apos;a&apos;, id=&apos;link1&apos;)
-
-# 寻找class为story，内容为‘...’的节点
-# class为python的保留字，所以这里下一个下斜杠使用class_
-p_nodes = soup.find_all(&apos;p&apos;, class_=&apos;story&apos;, string=&apos;...&apos;)
-
-# 打印信息
-for node in a1_nodes:
-    print node[&apos;id&apos;]
-for node in a2_nodes:
-    print node[&apos;href&apos;]
-for node in p_nodes:
-    print node.get_text()
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://AaronZgl.github.io/2017/09/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Aaron Zhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aaron">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/21/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T23:53:49+08:00">
-                2017-09-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <img class="site-author-image" itemprop="image"
-              src="/images/avatar.png"
-              alt="Aaron Zhou" />
-          
-            <p class="site-author-name" itemprop="name">Aaron Zhou</p>
-            <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives/">
-            
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/AaronZgl" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>GitHub</a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Aaron Zhou</span>
-
-  
-</div>
-
-
-  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-  <span class="post-meta-divider">|</span>
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
-
-
-        
-
-
-
-
-  <script type="text/javascript">
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//tajs.qq.com/stats?sId=63742889";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
-
-
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+<body onload="loadWallet();">
+	<!--- header ---->
+	<div class="header">
+		<div class="container">
+			<div class="logo wow fadeInDown animated" data-wow-delay=".2s">
+				<a href="index.html">星云 <span>代币钱包</span></a>	
+			</div>
+			<div class="bus wow fadeInUp animated" data-wow-delay=".2s">
+				<a href="index.html" class="buses active">代币钱包</a>
+				<a href="token.html">创建代币</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--- /header ---->
+
+	<!--- wallet ---->
+	<div class="wallet">
+		<div class="container">
+			<div class="search animated wow fadeInUp animated animated" data-wow-delay=".5s">
+				<h3>钱包使用说明</h3>
+			</div>
+			<div class="search animated wow fadeInUp animated animated" data-wow-delay=".5s">
+				<p>在下方输入你的星云账户地址并提交，即可查询你钱包中添加的代币及余额。<br> 
+					你也可以创建属于你自己的代币，分分钟ICO，担任CEO，迎娶白富美，从此走上人生巅峰！还等什么，赶快行动吧！
+					
+				</p>
+				<form  class="form-horizontal" role="form">
+					<div class="form-group">
+						<!-- <label class="control-label sr-only" for="inputSuccess1">搜索框</label> -->
+						<div class="col-sm-8">
+						<input type="text" id="accountAddress" class="form-control" placeholder="请输入你的星云账户地址" >
+						</div>
+						<!-- <span class="help-block">你输入的信息是正确的</span> -->
+						<!-- <span class="glyphicon glyphicon-ok form-control-feedback"></span> -->
+						<div class="col-sm-4">
+							<button class="btn btn-success" type="button" onclick="searchWallet();">提交</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="tra-top animated wow fadeInUp animated animated" data-wow-delay=".5s">
+				<h4>已添加代币列表</h4>
+				<div class="list">
+					<ul class="rout">
+						<li class="name">代币名称</li>
+						<li class="address">代币地址</li>
+						<li class="balance">代币余额</span></li>
+						<li class="send">发送代币</li>
+						<div class="clearfix"></div>
+					</ul>
+					<!--<ul class="rou-secnd animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;">
+						<!--
+						<li class="name">
+							<p><strong>NAS</strong></p>
+						</li>
+						<li class="address">
+							<p>星云链官方数字货币</p>
+						</li>
+						<li class="balance">
+							<p id="nasBalance"></p>
+						</li>
+						<li class="send">
+							<button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal4" onclick="clickSend();">发送</button>
+						</li> -->
+					
+						<div class="hello" id="hello">
+							<p>您的钱包还没有内容，<br>快点添加您拥有的代币吧！<br><em>或者去创建一个属于你自己的代币！</em></p>	
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="hello" id="loading">
+							<p>正在加载钱包, 请稍等...</p>
+							<div class="clearfix"></div>
+						</div>
+						
+						
+						
+					
+					<div id="tokenList">
+					</div>
+				</div>
+				<div class="add">
+					<button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal3">添加代币</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!--- /wallet ---->
+	<!-- add token -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<section>
+						<div class="modal-body modal-spa">
+							<div class="writ" id="newWindow">
+								<h4>解锁你的星云账户！</h4>
+									<ul>
+										<li class="na-me", id="uploadButton">
+											<input class="inputfile btn btn-success btn-block" id="keyFile" type="file" accept="application/json">
+										</li>
+										<li class="na-me">
+											<input class="pass" id="pass" type="text" placeholder="请输入密码">
+										</li>
+										<li class="na-me">
+												<input class="pass" id="addAddress" type="text" placeholder="请输入你要添加的代币地址">
+										</li>
+										<div class="clearfix"></div>
+									</ul>
+									<div class="sub-bn form-group">
+										<div class="col-sm-6">
+											<button class="subbtn" onclick="addToken();">确定</button>
+										</div>
+										<div class="col-sm-6">
+										<form>
+											<button class="subbtn">取消</button>
+										</form>
+										</div>
+									</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+	</div>
+	<!-- //add token -->
+	<!-- send Token -->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					</div>
+						<section>
+							<div class="modal-body modal-spa">
+								<div class="writ", id="newWindow1">
+									<h4>发送代币</h4>
+										<ul>
+											<li class="na-me">
+												<input class="name" id="tokenName" type="text" value="tokenName">
+											</li>
+											<li class="na-me">
+												<input class="address" id="tokenAddress" type="text" value="tokenAddress">
+											</li>
+											<li class="na-me">
+												<input class="balance" id="tokenBalance" type="text" value="tokenBalance">
+											</li>
+											<li class="na-me">
+													<input class="balance" id="toAddress" type="text" placeholder="请输入转账地址">
+											</li>
+											<li class="na-me">
+													<input class="balance" id="tokenValue" type="text" placeholder="请输入转账金额">
+											</li>
+											<li class="na-me">
+												<input class="btn btn-success btn-block" id="keyFile1" type="file" accept="application/json">
+											</li>
+											<li class="na-me">
+												<input class="pass" id="pass1" type="text" placeholder="请输入密码">
+											</li>
+											<div class="clearfix"></div>
+										</ul>
+										<div class="sub-bn form-group">
+											<div class="col-sm-6">
+												<button class="subbtn" onclick="sendToken();">确定</button>
+											</div>
+											<div class="col-sm-6">
+											<form>
+												<button class="subbtn">取消</button>
+											</form>
+											</div>
+										</div>
+								</div>
+							</div>
+						</section>
+				</div>
+			</div>
+	</div>
+	<!-- //send Token -->
+	<script src="lib/nebulas.js"></script>
+	<script type="text/javascript">
+		'use strict';
+		var HttpRequest = require("nebulas").HttpRequest;
+		var Neb = require("nebulas").Neb;
+		var Account = require("nebulas").Account;
+		var Transaction = require("nebulas").Transaction;
+		var account = new Account();
+		var contractAddress = 'n1vauL6bmmSJqiTXgd6yjKpsB1a57JkbGXL';
+		var intervalQuery;
+		var newWindow = document.getElementById("newWindow");
+		var newWindow1 = document.getElementById("newWindow1");
+		
+		// 连接网络
+		var neb = new Neb();
+		var chainId = 1001;
+		var netWork = "https://testnet.nebulas.io"
+		neb.setRequest(new HttpRequest(netWork));
+		
+		// 搜索Token
+		function loadWallet() {
+			var accountAddress = sessionStorage.getItem("accountAddress");
+			var accountAddressInput = document.getElementById("accountAddress");
+			if (accountAddress){
+				document.getElementById("hello").style.display = "none";
+				document.getElementById("loading").style.display = "inline";
+				accountAddressInput.placeholder = accountAddress;
+				searchToken(accountAddress);
+			}
+		};
+
+		function searchWallet() {
+			var accountAddress = document.getElementById('accountAddress').value;
+			if (accountAddress === "") {
+				alert("客官，给我个地址吧，巧妇难为无米之炊呀！");
+			} else if (Account.isValidAddress(accountAddress)) {
+				document.getElementById("hello").style.display = "none";
+				document.getElementById("loading").style.display = "inline";
+
+				sessionStorage.setItem("accountAddress", accountAddress);
+				searchToken(accountAddress);
+			} else {
+				alert("您输入的地址无效，请检查是否输入错误！");
+			}
+		};
+
+		function callContract(accountAddress, contractAddress, func, args) {
+			var promise = new Promise (function(resolve, reject) {
+				neb.api.call({
+					chainID: chainId,
+					from: accountAddress,
+					to: contractAddress,
+					value: 0,
+					nonce: 0,
+					gasPrice: 1000000,
+					gasLimit: 2000000,
+					contract: {
+						function: func,
+						args: JSON.stringify(args),
+					}
+				}).then(function (resp) {
+					var data = JSON.parse(resp.result);
+					resolve(data)
+				}).catch(function(err) {
+					console.log(err);
+					if (err == "Error: invalid contract"){
+						alert("没有搜索到代币，请检查您的合约地址是否正确！");
+					} else{
+						alert("您还没有代币，赶快添加吧！");
+						document.getElementById("tokenList").innerHTML = "";
+						document.getElementById("hello").style.display = "inline";
+						document.getElementById("loading").style.display = "none";
+					}
+				})
+			});
+			return promise;
+		};
+
+		function callToken(accountAddress, contractAddress) {
+			var promise = new Promise (function(resolve, reject) {
+				var name, symbol;
+				// var decimals, totalSupply;
+				var balance;
+				callContract(accountAddress, contractAddress, "name", []).then(function(data){
+					name = data;
+					return callContract(accountAddress, contractAddress, "symbol", [])
+				}).then(function(data) {
+					symbol = data;
+				/*	return callContract(accountAddress, contractAddress, "decimals", [])
+				}).then(function(data) {
+					decimals = data;
+					return callContract(accountAddress, contractAddress, "totalSupply", [])
+				}).then(function(data) {
+					totalSupply = data; */
+					return callContract(accountAddress, contractAddress, "balanceOf", [accountAddress])
+				}).then(function(data) {
+					balance = data;
+					var dic = {name: name, symbol: symbol, 
+						//decimals: decimals, totalSupply:totalSupply, 
+						balance: balance, address: contractAddress};
+					resolve(dic)
+				});
+			});
+			return promise;
+		}
+
+		function searchToken(accountAddress) {
+			callContract(accountAddress, contractAddress,"search", [accountAddress]).then(function(tokens){
+				var tokenHtml = "";
+				var tokenList = new Array();
+				var tokenContent = document.getElementById('tokenList');
+				var contentList = new Array();
+				for (var i=0; i< tokens.length; i++){
+					var cAddress = tokens[i]
+					contentList.push(callToken(accountAddress, cAddress))
+				}
+				Promise.all(contentList).then(function(data){
+					for (var i=0; i< data.length; i++){
+						var token = data[i];
+						var name = token['name'];
+						var symbol = token['symbol'];
+						//var decimals = token['decimals'];
+						//var totalSupply = token['totalSupply'];
+						var balance = token['balance'];
+						var address = token['address'];
+						var content = `
+						<ul class="rou-secnd animated wow fadeInUp animated" data-wow-duration="1200ms" data-wow-delay="500ms" style="visibility: visible; animation-duration: 1200ms; animation-delay: 500ms; animation-name: fadeInUp;">
+								<li class="name"><p><strong>${name}</strong>(${symbol})</p></li>
+								<li class="address"><p>${address}</p></li>
+								<li class="balance"><p>${balance}</p></li>
+								<li class="send"><button class="btn btn-success" type="button" data-toggle="modal" data-target="#myModal4" onclick="clickSend('${symbol}','${address}',${balance});">发送</button></li>
+								<div class="clearfix"></div>
+						</ul>`
+						tokenHtml += content;
+					} 
+					document.getElementById("loading").style.display = "none";
+					tokenContent.innerHTML = tokenHtml;
+				})
+			}).catch(function(err) {
+				console.log(err);
+			});
+		}
+
+		//添加token
+		function addToken() {
+			var tokenAddress = document.getElementById('addAddress').value;
+			var password = document.getElementById("pass").value;
+			if (tokenAddress ==="" || password === "") {
+				alert("请将内容填写完整！");
+			} else if(Account.isValidAddress(tokenAddress)) {
+				callContract(tokenAddress, tokenAddress, "name", []).then(function(data){
+					console.log(data)
+					var args = [tokenAddress];
+					var keyStore = document.getElementById("keyFile").files[0];
+					readKey(keyStore).then(function(key) {
+							generateAddTransaction(key, password, args);
+					})
+				}).catch(function(err){
+					alert("没有搜索到该代币地址！");
+				})
+				
+			} else {
+				alert("您输入的地址无效，请检查是否输入错误！");
+			}
+		};
+
+		//点击发送
+		function clickSend(symbol, address, balance) {
+			document.getElementById("tokenName").value = symbol;
+			document.getElementById("tokenAddress").value = address;
+			document.getElementById("tokenBalance").value = balance;
+		}
+
+		//发送代币
+		function sendToken() {
+			var address = document.getElementById("tokenAddress").value;
+			var balance = document.getElementById("tokenBalance").value;
+			var toAddress = document.getElementById("toAddress").value;
+			var value = document.getElementById("tokenValue").value;
+			var password = document.getElementById("pass1").value;
+			console.log(toAddress)
+			if (toAddress == "" || value === "") {
+				alert("请将内容填写完整");
+			} else if(value > balance) {
+				alert("您没有这么多钱可以转账！");
+			} else if(!Account.isValidAddress(toAddress)){
+				alert("您输入的地址无效，请检查是否输入错误！");
+			} else {
+				var args = [toAddress, parseInt(value)];
+				console.log(args)
+				var keyStore = document.getElementById("keyFile1").files[0];
+				readKey(keyStore).then(function(key) {
+					console.log(key)
+					generateTransaction(key, password, address, args);
+				})
+			}
+		}
+
+		// 读取文件
+		function readKey(keyStore) {
+			var promise = new Promise (function(resolve, reject) { 
+				if (keyStore == undefined) {
+					alert("别忘了加载你的钱包文件哦");
+				} else{
+					var oFReader = new FileReader();  
+					oFReader.readAsText(keyStore);
+					oFReader.onloadend = function(oFRevent){  
+						var key = oFRevent.target.result;
+						// sessionStorage.setItem("nasKeyStore", key);
+						resolve(key);
+					}
+				}
+			});
+			return promise;
+		};
+
+		// 生成添加交易
+		function generateAddTransaction(key, password, args) {
+			initAccount(key, password).then(function(account){
+				return accountBalance(account);
+			}).then(function(account) {
+				return signTransaction(account, contractAddress, "save", args);
+			}).then(function(data) {
+
+				return deployTransaction(data)
+			}).then(function(txhash){
+				newWindow.innerHTML = `<h4>正在提交，请稍等...</h4>`
+				intervalQuery = setInterval(function() {
+					funcIntervalQuery(txhash);
+				}, 5000);
+			})
+		}
+
+		// 生成转账交易
+		function generateTransaction(key, password,conAdd, args) {
+			initAccount(key, password).then(function(account){
+				return accountBalance(account);
+			}).then(function(account) {
+				return signTransaction(account, conAdd, "transfer", args);
+			}).then(function(data) {
+				return deployTransaction(data)
+			}).then(function(txhash){
+				newWindow1.innerHTML = `<h4>正在提交，请稍等...</h4>`
+				intervalQuery = setInterval(function() {
+					funcIntervalQuery(txhash);
+				}, 5000);
+			})
+		}
+
+		// 查询交易结果
+		function funcIntervalQuery(txhash) {
+			console.log('正在查询')
+			receiptTransaction(txhash).then(function(resp){
+				var respObject = resp;
+				if (respObject.status == 1){
+					clearInterval(intervalQuery);
+					newWindow.innerHTML = `
+					<h4>执行成功！</h4>
+					<div class="sub-bn form-group">
+						<form>
+							<button class="btn btn-success btn-block">知道了</button>
+						</form>
+					</div>`
+					newWindow1.innerHTML = `
+					<h4>执行成功！</h4>
+					<div class="sub-bn form-group">
+						<form>
+							<button class="btn btn-success btn-block">知道了</button>
+						</form>
+					</div>`
+				} else if (respObject.status == 0) {
+					newWindow.innerHTML = `<h4>啊哦，好像哪里出错了！</h4>`
+				}
+			}).catch(function(err){
+				newWindow.innerHTML = `<h4>啊哦，好像哪里出错了！</h4>`
+			})
+		}
+
+		// 导入账户
+		var initAccount = function(key, passphrase) {
+			var promise = new Promise(function(resolve, reject){
+				account.fromKey(key, passphrase);
+				var ss = account.getAddressString();
+				console.log("导入账户成功，地址为：" + ss);
+				resolve(account);
+			}).catch(function(err){
+				alert("导入账户失败，是不是密码记错了！");
+			});
+			return promise;
+		}
+		
+		// 签名合约
+		var signTransaction = function(account, contract_address, contractFunction, args) {
+			if (contract_address === "") contract_address = account;
+			var promise = new Promise(function(resolve, reject){
+				neb.api.getAccountState(account.getAddressString()).then(function(state) {
+					var nonce = parseInt(state.nonce) + 1;
+					var tx = new Transaction({
+						chainID: chainId,
+						from: account,
+						to: contract_address,
+						value: 0,
+						nonce: nonce,
+						gasPrice: 1000000,
+						gasLimit: 100000,
+						contract: {
+							function: contractFunction,
+							args: JSON.stringify(args),
+						}
+					});
+					tx.signTransaction();
+					resolve(tx.toProtoString());
+				}).catch(function(err) {
+					console.log(err);
+				});
+			});
+			return promise;
+		}
+		
+		// 部署合约
+		var deployTransaction = function(data) {
+			var promise = new Promise(function(resolve, reject){
+				neb.api.sendRawTransaction(data).then(function (resp) {
+					resp = resp.result || resp;
+					var txhash = resp.txhash;
+					console.log('合约提交成功,txhash:' + txhash);
+					resolve(txhash)
+				}).catch(function (err) {
+					console.log(err);
+				})
+			});
+			return promise;
+		}
+
+		// 查询交易结果
+		var receiptTransaction = function(txhash) {
+			var promise = new Promise(function(resolve, reject){
+				neb.api.getTransactionReceipt(txhash).then(function (resp) {
+					resolve(resp);
+				}).catch(function(err) {
+					console.log(err);
+				});
+			});
+			return promise
+		}
+		
+		// 查询账户余额
+		var accountBalance = function(account) {
+			var promise = new Promise(function(resolve, reject){
+				neb.api.getAccountState(account.getAddressString()).then(function(result) {
+					var balance =  result.balance;
+					if (balance >= 100000000000){
+						resolve(account);
+					} else {
+						alert(`"您的余额不足,您最少需要NAS余额为100000000000,您的当前余额为${balance}"`)
+					}	
+				}).catch(function(err) {
+						console.log(err);
+				});
+			});
+			return promise;
+		}		
+	</script>
 </body>
 </html>
